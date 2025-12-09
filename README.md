@@ -1,7 +1,7 @@
-# 🌟 Document Authenticity — Frontend + Backend Demo
+# 🌟 Document Authenticity — Frontend + Backend 
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=27&duration=3000&color=00ADEF&center=true&vCenter=true&width=900&lines=Document+Authenticity+Demo;React+(TypeScript)+%2B+Python+Backend;Vite+%2B+Tailwind" alt="typing" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=27&duration=3000&color=00ADEF&center=true&vCenter=true&width=900&lines=Document+Authenticity;React+(TypeScript)+%2B+Python+Backend;Vite+%2B+Tailwind" alt="typing" />
 </p>
 
 ---
