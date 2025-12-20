@@ -1,0 +1,140 @@
+/* 1. Global Reset & Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 2. Main Card Container */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.upload-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 500px; /* Limits width on large screens */
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+h2 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* 3. File Input Area */
+.file-input-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+/* Customizing the file input look */
+input[type="file"] {
+  width: 100%;
+  padding: 30px;
+  background: #f8f9fa;
+  border: 2px dashed #cbd5e0;
+  border-radius: 8px;
+  cursor: pointer;
+  box-sizing: border-box; /* Ensures padding doesn't break width */
+  color: #4a5568;
+}
+
+input[type="file"]:hover {
+  border-color: #4299e1;
+  background: #ebf8ff;
+}
+
+/* 4. Selected Files List */
+.file-info {
+  background: #edf2f7;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #4a5568;
+  max-height: 150px; /* Scroll if too many files selected */
+  overflow-y: auto;
+}
+
+.file-info ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.file-info li {
+  margin-bottom: 4px;
+}
+
+/* 5. Upload Button */
+.upload-btn {
+  background-color: #3182ce; /* Blue */
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(49, 130, 206, 0.2);
+}
+
+.upload-btn:hover {
+  background-color: #2b6cb0;
+  transform: translateY(-1px);
+}
+
+.upload-btn:disabled {
+  background-color: #a0aec0;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* 6. Success & Error Messages */
+.success-msg {
+  background-color: #f0fff4;
+  border: 1px solid #c6f6d5;
+  color: #2f855a;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.error-msg {
+  background-color: #fff5f5;
+  border: 1px solid #fed7d7;
+  color: #c53030;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+/* 7. Image Gallery (Uploaded Results) */
+/* These classes target the images displayed after upload */
+.success-msg img {
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.success-msg img:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
