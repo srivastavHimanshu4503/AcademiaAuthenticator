@@ -115,7 +115,7 @@ npm run build
 
 ```bash
 # recommended: create a venv
-cd SRC/backend
+cd ./backend # or whereever the backend folder exists in the root directory
 python -m venv .venv
 # activate .venv (mac/linux)
 source .venv/bin/activate
